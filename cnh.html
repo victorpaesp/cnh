@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CNH</title>
+        <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="css/stylecnh.css" />
+    </head>
+
+
+    <body>
+        <!--Cabeçalho-->
+        <table class="cabecalho">
+
+            <colgroup>
+                <col width="20%">
+                <col width="60%">
+                <col width="15%">
+                <col width="5%" >
+            </colgroup>
+
+            <tr> 
+                <td> <img src="https://logodownload.org/wp-content/uploads/2017/03/brasao-do-brasil-republica-1.png"> </td>               
+                   
+                <td>
+                    <table class="main_text" width="100%">
+                        <tr> <td> <h1> República Federativa do Brasil  </h1> </td> </tr>
+                        <tr> <td> Ministério da infraestrutura               </td> </tr>
+                        <tr> <td> departamento nacional de trânsito          </td> </tr>
+                        <tr> <td> carteira nacional de habilitação           </td> </tr>
+                    </table>
+                </td>
+
+                <td> <img src="https://static.congressoemfoco.uol.com.br/2016/09/s%C3%A3o-paulo.png"> </td>  
+                
+                <td> 
+                    <table>
+                        <tr> <td> S </td> </tr>
+                        <tr> <td> P </td> </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+
+        <!--Sidebar e Formulário-->
+        <table class="sideform">
+
+            <colgroup>
+                <col width="10%">
+                <col width="90%">
+            </colgroup>
+            
+            <tr>
+                <!--Sidebar-->
+                <td class="sidebar">
+                    <table>                        
+                        <tr>                            
+                             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Contorno_do_mapa_do_Brasil.svg/1200px-Contorno_do_mapa_do_Brasil.svg.png">     
+                        </tr>
+                    
+                        <tr>
+                            <tr> <td> Válido em todo        </td> </tr>
+                            <tr> <td> o território nacional </td> </tr>
+                            <tr> <th> 9999999999            </th> </tr>
+                        </tr>
+                    </table>
+                </td>
+            
+                <!--Formulário-->
+                <form action="">
+                    <td class="content">
+                        <table>
+                            <colgroup>
+                                <col width="25%">
+                                <col width="75%">
+                            </colgroup>
+                            <tr>
+
+                                <!--Nome-->                               
+                                <tr class="primeira_label">
+                                    <td colspan="2"> 
+                                        <label for="nome"> Nome </label>
+                                        <input type="text" id="nome" />
+                                    </td>                                    
+                                </tr>
+                          
+
+                                <!--Foto 3x4 e Número de registro-->                        
+                                <td>
+                                    <table>    
+                                        <tr> <td> <img src="https://closekids.com.br/wp-content/uploads/2017/06/3x4-Ind.jpg"> </td> </tr>
+                                        <tr>    
+                                            <td>
+                                                <label for="registro"> Nº Registro </label>
+                                                <input type="number" id="registro" style="color: red;" />
+                                            </td> 
+                                        </tr>
+                                    </table>
+                                </td>
+
+                                <!--Informações-->
+                                <td>
+                                    <table cellspacing=2 cellpadding=6>
+                                        <tr>
+                                            <td colspan="3">
+                                                <label for="rg"> Doc. identidade/org emissor/uf </label>
+                                                <input type="text" id="rg" placeholder="123456789 SSP SP"/>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">
+                                                <label for="cpf"> CPF </label>
+                                               <!-- <input type="text" id="cpf" placeholder="111-111-111-11"/> -->
+                                                <input type="text" name="cpf" maxlength="14" onkeydown="javascript: fMasc( this, mCPF );">
+                                                
+                                            </td>
+                                            <td colspan="2">
+                                                <label for="nascimento"> Data nascimento </label>
+                                                <input type="date" id="nascimento" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="3" id="filiacao">
+                                                <label for="filiacao"> Filiação </label>
+                                                <textarea id="filiacao"> </textarea>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label for="permissao"> Permissão </label>
+                                                <input type="text" id="permissao" disabled />
+                                            </td>
+                                            <td>
+                                                <label for="acc"> ACC </label>
+                                                <input type="text" id="acc" disabled />
+                                            </td>
+                                            <td>
+                                                <label for="cat"> CAT. Hab </label>
+                                                <input list="cat" style="color: red;"/>
+                                                <datalist id="cat">
+                                                    <option value="ACC">
+                                                    <option value="A">
+                                                    <option value="B">
+                                                    <option value="C">
+                                                    <option value="D">
+                                                    <option value="E">
+                                                  </datalist>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td  colspan="2">
+                                                <label for="validade"> Validade </label>
+                                                <input type="date" id="validade" style="color: red;" />
+                                            </td>
+                                            <td  colspan="2">
+                                                <label for="habilitacao"> 1º habilitação </label>
+                                                <input type="date" id="habilitacao" />
+                                            </td>
+                                        </tr>
+                                    </table>                                    
+                                </td>
+                            
+                            </tr> 
+                        </table>
+                    </td>                   
+                </form>
+            </tr>
+        </table>
+    <script type="text/javascript" src="js/mask.js"></script>
+    </body>
+
+    <!--Rodapé com submit-->
+    <footer>
+        <tr>
+            <td> 
+                <input type="submit">
+            </td>
+        </tr>
+    </footer>
+</html>

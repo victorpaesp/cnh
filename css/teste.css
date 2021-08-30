@@ -1,0 +1,117 @@
+/* Principais */ 
+
+body {
+    width: 70%;
+    margin: 0 auto;    
+    text-transform: uppercase;            
+    font-family: sans-serif;
+    border: 0px solid black;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+table {
+    width: 100%;
+    height: 100%;
+}
+
+img {
+    width: 70px;
+}
+
+
+/* Células e linhas */
+
+h1 {
+    margin: 0 auto;
+    font-size: 13px;
+    line-height: 0;
+} 
+
+h2 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+    font-size: 10px;
+    line-height: 0px;
+}
+
+td, tr {
+    padding: 0;
+}
+
+
+/* Cabeçalho */ 
+
+.cabecalho {
+    padding-top: 10px;
+    background-color: black;
+    color: rgba(127, 255, 138, 0.727);
+}
+
+.cabecalho td {
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+
+/* Sidebar e Conteúdo */
+
+.sideform table {
+    width: 100%;
+    border-spacing: 8px;
+}
+
+.sideform {
+    background-color: rgba(127, 255, 138, 0.486);
+}
+
+.sideform td {
+    text-transform: uppercase;
+    font-size: 10px;
+}
+
+.sidebar img {
+    width: 50px;
+}
+
+#sidetext {
+    transform: rotate(270deg);
+    text-align: center;
+}
+
+.foto img {
+    width: 100px;
+}
+
+.content {   
+    border-spacing: 20px 0px;
+}
+
+
+/* Formulário */ 
+
+label {
+     display:block;
+     padding: 0;
+}
+
+input {
+     text-transform: uppercase;
+     width: 100%;
+     padding: 0;
+}
+
+.firstinput {
+    width: 540px;
+}
+
+textarea {
+    width: 99.5%;
+    text-transform: uppercase;
+}
